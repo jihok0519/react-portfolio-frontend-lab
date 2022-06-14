@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const Projects = (props) => {
     const [ projects, setProjects ] = useState(null);
-    const getProjectsData = async = () => {
+    const getProjectsData = async () => {
         const response = await fetch(props.URL + "projects");
         const data = await response.json();
         setProjects(data);
@@ -14,7 +14,7 @@ const Projects = (props) => {
         return projects.map((project) => (
         <div>
             <h1>{project.name}</h1>
-            <img src={project.iamge} />
+            <img src={project.iamge} alt="placeholder"/>
             <a href={project.git}>
                 <button>Github</button>
             </a>
