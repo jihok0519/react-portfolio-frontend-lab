@@ -8,7 +8,7 @@ const About = (props) => {
         setAbout(data);
     };
 
-    useEffect(() => getAboutData(), []);
+    useEffect(() => {getAboutData()}, []);
 
     const loaded = () => (
         <div>
