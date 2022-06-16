@@ -7,7 +7,7 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 
 function App() {
-  const URL = "http://localhost:4000/";
+  const URL = "https://react-portfolio-backend-lab.herokuapp.com/";
 
   return (
     <div className="App">
